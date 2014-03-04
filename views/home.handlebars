@@ -1,100 +1,213 @@
-<style>
-	body{
-		background-color:#fff;
-	}
-	#mastermenu{
-		width:300px;
-		min-height:400px;
-		overflow:hidden;
-		position: fixed;
-		top:0;
-		float:left;
-		background-color:#f5f5f5/*rgba(1,41,127 , .5)*/;
-		box-shadow: 0 0 5px 5px #888;
-	}
 
-	#mastermenu p{
-		font-size:45px;
-		margin-bottom:15px;	
-		color: #06B8D7;
-		text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-
-		font-family: 'Englebert', sans-serif;
-		text-align:center;
-		margin-top:35px;
-	}
-	#main-info{
-		margin:25px 25px 25px 330px;
-		border:1px solid #FF9999; 
-		border-radius:10px;
-
-	}
-	#main-info h1{
-		text-align:center;
-		margin:20px 0;
-		padding:20px;	
-		font-family: 'Englebert', sans-serif;
-	}
-	#main-info h2{
-		text-align:center;
-		padding: 5px 30px;
-		font-family: 'Englebert', sans-serif;
-	}
-	.nav-pills li a{
-		text-align:center;
-	}
-</style>
-<div id="mastermenu">
-	<div class="alert alert-info">
-	<p>
-		Spare
-	</p>
-	</div>
-	<div style="display:block;height:120px">
-		<div class="col-lg-6" style="padding:50px auto;display:block; text-align:center" >
-			<div class="input-group">
-				<input type="text" class="form-control" style="width:180px">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">search</button>
-				</span>
-			</div>
-		</div>
-	</div>
-	<div style="display:block;">
-		<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-        	<li><a href="#/products">Products</a></li>
-        	<li><a href="#/categories">Categories</a></li>
-        	<li><a href="#/tracks">Your Tracks</a></li>
-        	<li>
-        		My account
-        		<ul>
-        			<li><a href="#/Favorites"></a></li>
-        			<li><a href="#/account"></a></li>
-        			<li><a href="#/account"></a></li>
-        				
-        			
-        		</ul>
-
-        	</li>
-        	
-      	</ul>
+<div class="side-nav">
+    
+    <div class="gv-logo">
+      <a href="/">
+        <div class="logotype"></div>
+        <div class="bug"></div>
+        <span>Spare</span>
+      </a>
     </div>
+
+    <ul>
+      <li>
+        <a href="#/" class="selected">
+          <span>Home              </span> <i class="icon team"></i>
+        </a>
+      </li>
+      <li>
+	    <a href="#/products/" >
+      
+	      <i class="glyphicon glyphicon-th navegadorIcons" style="position:absolute;left:15px;top:10px"></i>
+      
+        <span>Products</span> 
+	    </a>
+      </li>
+      <li>
+        <a href="/about/" class="">
+        <i class="glyphicon glyphicon-th-list navegadorIcons"style="position:absolute;left:15px;top:10px"></i>
+          <span>Categories</span> 
+        </a>
+      </li>
+      <li>
+        <a href="/library/" class="">
+        <i class="glyphicon glyphicon-chevron-right" style="position:absolute;left:15px;top:10px"></i>
+          <span>Tracks</span> 
+        </a>
+      </li>
+      <li>
+        <a href="/library/" class="">
+        <i class="glyphicon glyphicon-user" style="position:absolute;left:15px;top:10px"></i>
+          <span>Account</span> 
+        </a>
+      </li>
+    </ul>
+
+
+
+                <div class="accordion" id="leftMenu">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                  <i class="icon-home"></i> Dashboard
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                                <i class="icon-th"></i> Layout
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                                <i class="icon-th-list"></i> UI Components
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                <i class="icon-list-alt"></i> Forms
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                                <i class="icon-cog"></i> Plugins
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                                <i class="icon-file"></i> Templates
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                </div>
+    
 </div>
-<div id="main-info" ng-view="">
-	
-<div>
-<script>
-
-	$('#mastermenu').height($(document).height());
-	$('#main-info').height($(document).height() - 50);
 
 
-    $(".nav-pills li").on('click',function(event){
-        
-        $( "li" ).each(function() {
-            $( this ).removeClass( "active" );
-        });
-        $(this).addClass('active');
-     });
-</script>
+
+
+
+<div  class="content-frame">
+<div id="main-info"  ng-view="">
+</div>
+</div>
+
+
+
+<!--
+    // <h3>How we help</h3>
+    
+    // <ul>
+    //   <li>
+    //     <a href="/google-access/" class="">
+    //       <span>Google Access</span> <i class="icon google-access"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/workshops/" class="">
+    //       <span>Workshops</span> <i class="icon workshops"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/design/" class="">
+    //       <span>Design</span> <i class="icon design"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/recruiting/" class="">
+    //       <span>Recruiting</span> <i class="icon recruiting"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/marketing/" class="">
+    //       <span>Marketing</span> <i class="icon marketing"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/engineering/" class="">
+    //       <span>Engineering</span> <i class="icon engineering"></i>
+    //     </a>
+    //   </li>
+    //   <li>
+    //     <a href="/product/" class="">
+    //       <span>Product</span> <i class="icon product"></i>
+    //     </a>
+    //   </li>
+    // </ul>
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
