@@ -15,6 +15,8 @@ Spare.config(['$routeProvider',
                 redirectTo : '/'
             });
 }]);
+
+
 Spare.controller('HomeController',['$scope', function($scope){ }]);
 
 Spare.controller('ProductsController', ['$scope', '$http',

@@ -8,4 +8,4 @@ exports.list = function(req, res){
 };
 
 
-/*jajajaj*/
+/*jajajaj soy user basic*/ 

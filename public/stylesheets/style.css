@@ -8,8 +8,21 @@ a {
 }
 
 
+<<<<<<< HEAD
 .panel-default>.panel-heading {
 color: #333;
 background-color: #f5f5f5;
 border-color: #ddd;
 }
+=======
+//Menu jisuss
+.home .content-frame {
+  background: #ffffff url(../images/home/bg.png) 100% 0 no-repeat;
+}
+@media screen and (max-width: 890px) {
+  .home .content-frame {
+    background: #fff;
+  }
+}
+
+>>>>>>> userBasic
