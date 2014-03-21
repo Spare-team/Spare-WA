@@ -1,20 +1,20 @@
 
 // ======================================================================
-// Side navigation menu, Top (mobile) navigation menu 
-
-var SideNav = (function() {
-  var sideNav = $('.side-nav');
-  var topNav = $('.top-nav');
-  var navItems = $("li a", sideNav);
+$(function() {
+  var sideNav = $('.menu');
+  // var topNav = $('.top-nav');
+  // var navItems = $("li a", sideNav);
   
-  init();
-  function init() {
+  go();
+  function go() {
             
       $(function() { setTimeout(collapse, 1000); });
 
-      $('.side-nav')
+      $('.menu')
         .mouseenter(expand)
         .mouseleave(collapse);
+
+        setFocus();
     
   }
   
@@ -56,27 +56,44 @@ var SideNav = (function() {
   function expand() {
     $('body').removeClass('nav-collapsed');
   }
-  
-  function isHome() {
-    return '/' === location.pathname + location.search;
-  }
-
-  function updateWhiteNav() {
-    if (isHome()) {
-      sideNav.addClass("white-nav");
-    }
-    else {
-      if (collapsableNav) {
-        setTimeout(function() {
-           sideNav.removeClass("white-nav");
-        }, 250);
-      }
-      else {
-        sideNav.removeClass("white-nav");
-      }
-    }
-  }
  
-})();
 
+//=====================================
+// Aggregando propiedad focus
+
+   // var focus=;
+
+function setFocus(){
+  // var m=$('#menuItems a').on("click",function(element){
+  //     console.log("mamas cacaroto")
+  //     var as=$('#menuItems .selected').removeClass("focus");
+  //     // if(as.length>0)
+  //     // {
+  //     //     for (var r in as) {
+  //     //         as[r].removeClass("focus");
+  //     //     }
+  //     // }
+  //     element.addClass("focus");
+  //   });
+
+  // for(var i in m){
+  //   m[i].click(focus);
+
+  // }
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+);
 

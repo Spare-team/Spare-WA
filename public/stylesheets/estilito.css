@@ -3,13 +3,26 @@ ul {
   padding: 0;
   margin: 0;
 }
-li {
+/*li {
   list-style: none;
-}
+
+
+}*/
 article ul {
   padding-left: 1em;
   margin-bottom: 1em;
 }
+
+
+/*ul{background-color:#fff;}*/
+li:hover
+{
+   
+  background:#FFF /*#EDF7FC*/;
+  color:  #2da5da;
+  /*border-top: 1px #5488D6 solid;*/
+}
+
 /*article li {
   list-style: disc;
 }
@@ -48,37 +61,36 @@ article ul {
 */
 body {
   background: #fff;
-  color: #222;
+  /*color: #222;*/
 }
-a,
-a.link-block .link {
+/*a {
   color: #218bc3;
   text-decoration: none;
-}
-a:hover,
+}*/
+/*a:hover,
 a.link-block .link:hover {
   color: #0b2e40;
   -moz-transition: all ease-in-out 0.1s;
   -webkit-transition: all ease-in-out 0.1s;
   -o-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
-}
-a.black {
+}*/
+/*a.black {
   color: #222;
-}
-a.black:hover {
+}*/
+/*a.black:hover {
   color: #218bc3;
   -moz-transition: all ease-in-out 0.1s;
   -webkit-transition: all ease-in-out 0.1s;
   -o-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
-}
-a.link-block {
+}*/
+/*a.link-block {
   display: block;
   color: #222;
   text-decoration: none;
-}
-hr {
+}*/
+/*hr {
   border-color: #292929;
 }
 h5,
@@ -90,14 +102,14 @@ h6 {
 }
 
 
-
-//navegador
+*/
+/*//navegador
 .navegadorIcons {
   position: relative;
   top:10px;
   left: 15px;
   
-}
+}*/
 
 h1{
   font-family: font-family: 'Alegreya Sans SC', sans-serif;
@@ -314,8 +326,8 @@ html.side-nav-always-open .content-frame {
   width: 200px;
   overflow: hidden;
   cursor: default;
-  color: #c8c8c8;
-  background: #222;
+  /*color: #c8c8c8;*/
+ /* background: #222;*/
   overflow-x: hidden;
   overflow-y: auto;
   -moz-transition: width ease-in-out 0.28s, background linear 0.1s;
@@ -334,31 +346,9 @@ html.side-nav-always-open .content-frame {
   user-select: none;
 }
 .gv-logo {
-  height: 50px;
+  height: 90px;
 }
-.gv-logo .logotype,
-.gv-logo .bug {
-  background-image: url(../images/bug.png);
-  background-image: url(../images/bug.svg);
-  width: 150px;
-  height: 50px;
-}
-.gv-logo .logotype {
-  background-position: 0 -50px;
-  opacity: 1.0;
-  -moz-transition: opacity linear 0.28s;
-  -webkit-transition: opacity linear 0.28s;
-  -o-transition: opacity linear 0.28s;
-  transition: opacity linear 0.28s;
-}
-.gv-logo .bug {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.gv-logo span {
-  display: none;
-}
+
 .side-nav .gv-logo {
   margin: 20px 0 30px 0;
 }
@@ -394,18 +384,19 @@ html.side-nav-always-open .content-frame {
   font-size: 16px;
   font-weight: 300;
   color: inherit;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
   line-height: 44px;
   padding-left: 50px;
-  border-top: 1px #2d2d2d solid;
+  border-top: 1px #5488D6 solid;
+  text-decoration: none;
 }
 .side-nav li a.selected {
-  color: #e3bc28;
+  color: #2DA5DA;
 }
-.side-nav li:last-child a {
+/*.side-nav li:last-child a {
   border-bottom: 1px #2d2d2d solid;
-}
-.side-nav h3 {
+}*/
+/*.side-nav h3 {
   width: 200px;
   margin: 45px 0 14px 15px;
   font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -416,7 +407,7 @@ html.side-nav-always-open .content-frame {
   -webkit-transition: opacity ease-in-out 0.28s;
   -o-transition: opacity ease-in-out 0.28s;
   transition: opacity ease-in-out 0.28s;
-}
+}*/
 .side-nav .icon {
   display: block;
   position: absolute;
@@ -425,14 +416,14 @@ html.side-nav-always-open .content-frame {
   width: 40px;
   height: 40px;
   overflow: hidden;
-  background-image: url(../images/icons/nav-icons.png);
-  background-image: url(../images/icons/nav-icons.svg);
+  /*background-image: url(../images/icons/nav-icons.png);
+  background-image: url(../images/icons/nav-icons.svg);*/
   opacity: 0.4;
 }
 .side-nav li a.selected .icon {
   opacity: 1.0;
 }
-.side-nav .icon.team {
+/*.side-nav .icon.team {
   background-position: -7px 0px !important;
 }
 .side-nav .selected .icon.team {
@@ -461,8 +452,8 @@ html.side-nav-always-open .content-frame {
 }
 .side-nav .icon.design {
   background-position: -7px -160px !important;
-}
-.side-nav .selected .icon.design {
+}*/
+/*.side-nav .selected .icon.design {
   background-position: -57px -160px !important;
 }
 .side-nav.white-nav .icon.design {
@@ -530,16 +521,16 @@ html.side-nav-always-open .content-frame {
 }
 .side-nav.white-nav .icon.product {
   background-position: -107px -440px !important;
-}
-.no-touch .side-nav li a:hover {
+}*/
+/*.no-touch .side-nav li a:hover {
   background: #111;
-}
-.ie8 .side-nav .icon {
+}*/
+/*.ie8 .side-nav .icon {
   background: url(../images/icons/nav-icons.png);
 }
 .nav-collapsed .side-nav li a {
   background: transparent;
-}
+}*/
 @media screen and (max-height: 670px) and (min-width: 740px) {
   .side-nav li a {
     line-height: 35px;
@@ -573,7 +564,7 @@ html.side-nav-always-open .content-frame {
   top: 5px;
   background-position: 0 -100px;
 }
-.no-touch .side-nav.white-nav li a:hover {
+/*.no-touch .side-nav.white-nav li a:hover {
   background: rgba(1, 1, 1, 0.04);
 }
 .ie8 .side-nav.white-nav li a {
@@ -581,7 +572,7 @@ html.side-nav-always-open .content-frame {
 }
 .ie8 .side-nav.white-nav li a:hover {
   background: #eee;
-}
+}*/
 .gv-logo.mobile {
   display: none;
   position: absolute;
