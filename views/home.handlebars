@@ -1,190 +1,60 @@
-
 <div class="menu" style="background:#3399CC;">
-    
     <div class="gv-logo">
-      <a href="/">
-        <div class="logotype"></div>
-        <div class="bug"></div>
-        <span><!-- Spare --></span>
-      </a>
+        <a href="/">
+            <div class="logotype"></div>
+            <div class="bug"></div>
+            <span><!-- Spare --></span>
+        </a>
     </div>
-
     <ul id="menuItems" style="font-family:Gafata;">
-      <li>
-        <a href="#/" class="focus">
-          <span>Home              </span> <i class="icon team"></i>
-        </a>
-      </li>
-  
- 
-      <li >
-	    <a href="#/products/" >
-      
-	      <i class="glyphicon glyphicon-th navegadorIcons" style="position:absolute;left:15px;top:10px"></i>
-      
-        <span>Products</span> 
-	    </a>
-      </li>
-      <li>
-        <a href="/about/" class="">
-        <i class="glyphicon glyphicon-th-list navegadorIcons"style="position:absolute;left:15px;top:10px"></i>
-          <span>Categories</span> 
-        </a>
-      </li>
-      <li>
-        <a href="/library/" class="">
-        <i class="glyphicon glyphicon-chevron-right" style="position:absolute;left:15px;top:10px"></i>
-          <span>Tracks</span> 
-        </a>
-      </li>
-      <li>
-        <a href="/library/" class="">
-        <i class="glyphicon glyphicon-user" style="position:absolute;left:15px;top:10px"></i>
-          <span>Account</span> 
-        </a>
-      </li>
+        <li><a href="#/" class="focus"><span>Home</span> <i class="icon team"></i></a></li>
+        <li >
+            <a href="#/products/" >
+                <i class="glyphicon glyphicon-th navegadorIcons" style="position:absolute;left:15px;top:10px"></i>
+                <span>Products</span> 
+	       </a>
+        </li>
+        <li>
+            <a href="/about/" class="">
+                <i class="glyphicon glyphicon-th-list navegadorIcons"style="position:absolute;left:15px;top:10px"></i>
+                <span>Categories</span> 
+            </a>
+        </li>
+        <li>
+            <a href="/library/" class="">
+                <i class="glyphicon glyphicon-chevron-right" style="position:absolute;left:15px;top:10px"></i>
+                <span>Tracks</span> 
+            </a>
+        </li>
+        <li>
+            <a href="/library/" class="">
+                <i class="glyphicon glyphicon-user" style="position:absolute;left:15px;top:10px"></i>
+                <span>Account</span> 
+            </a>
+        </li>
     </ul>
-
-
-
-
-
 </div>
  
-
-
-
-
 <div  class="content-frame">
-
-
-  
-
-
-       <div class="navbar navbar-inverse navbar-static-top" role="navigation" style="background-color: #FFFFFF; 
-border-color: #ADBAC0;">
- 
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-    <!-- <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"> soy la baarra</span> -->
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    </button>
-    
-  </div>
-
-
-   <div style="position:relative; left:20px;">
- 
-
-
-    <a  rel="home" href="/" style=" text-decoration: none;" ><p  style="font-size:50px; background-color:white;  font-family:Gafata;   " >Ideal<!--, ideal for you--></p></a>
-    
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation" style="background-color: #FFFFFF;border-color: #ADBAC0;">
+        <div style="position:relative; left:20px; float:left; display:inline-block; ">
+            <a  rel="home" href="/" style=" text-decoration: none;" >
+                <p  style="font-size:50px; background-color:white;  font-family:Gafata; float:left; width:200px;" >
+                    Suitable
+                </p>
+            </a>
+            <div class="col-sm-3 col-md-3 pull-left" style="width:50%; float:left; display:inline-block; margin-top:10px;">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search product" name="srch-term" id="srch-term" >
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
     </div>
-
-
-
-  <div class="collapse navbar-collapse navbar-ex1-collapse" >
-
-    <div class="col-sm-3 col-md-3 pull-left" style="width:80%">
-    <form class="navbar-form" role="search">
-
-    <div class="input-group">
-
-      <input type="text" class="form-control" placeholder="Search a product" name="srch-term" id="srch-term" >
-      <div class="input-group-btn">
-        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-      </div>
+    <div id="main-info"  ng-view="">
     </div>
-    </form>
-    </div>
-  
-    <ul class="nav navbar-nav pull-right" >
-      <li><a href="/topic/notes/" style="color:#218bc3;">iniciar sesion</a></li>
-      <li>
-      <a href="/topic/notes/" style="color:#218bc3;">
-      <i class="glyphicon glyphicon-bell"> </i>
-    </a>
-      
-      </li>
-      
-    </ul>  
-  </div>
-
-
-    
-    
 </div>
-
-
-
-<div id="main-info"  ng-view="">
-</div>
-</div>
-
-
-
-<!--
-    // <h3>How we help</h3>
-    
-    // <ul>
-    //   <li>
-    //     <a href="/google-access/" class="">
-    //       <span>Google Access</span> <i class="icon google-access"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/workshops/" class="">
-    //       <span>Workshops</span> <i class="icon workshops"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/design/" class="">
-    //       <span>Design</span> <i class="icon design"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/recruiting/" class="">
-    //       <span>Recruiting</span> <i class="icon recruiting"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/marketing/" class="">
-    //       <span>Marketing</span> <i class="icon marketing"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/engineering/" class="">
-    //       <span>Engineering</span> <i class="icon engineering"></i>
-    //     </a>
-    //   </li>
-    //   <li>
-    //     <a href="/product/" class="">
-    //       <span>Product</span> <i class="icon product"></i>
-    //     </a>
-    //   </li>
-    // </ul>
-
-
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
