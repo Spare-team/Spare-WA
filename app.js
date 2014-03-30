@@ -59,6 +59,26 @@ app.get('/products', function(req, res){
 	}
 });
 
+
+app.get('/product/:id', function(req, res){
+console.log('llegaste');
+	var id = req.params.id;
+	if(req.get('content-type') == "application/json")
+	{
+		console.log('mierda');
+		request('http://localhost:3000/api/productos/' +id, function(error, response, body){
+			if(!error && response.statusCode == 200)
+			{	
+				res.end(body);
+			}	
+			else{
+				res.end("Mierda");
+			}
+		});	
+	}
+});
+
+
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

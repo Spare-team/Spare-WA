@@ -1,0 +1,25 @@
+<ol class="breadcrumb">
+  <li><a href="#/{{cat}}">{{cat}}</a></li>
+  <li><a href="#/{{subcat}}">{{subcat}}</a></li>
+  <li class="active">{{ brand }} - {{ model }}</li>
+</ol>
+
+
+<div id="photo" style="display:inline-block;float:left;">
+	<img  ng-repeat="image in images" src="http://localhost:3000/images/{{image}}" style="height:150px;width:150px;" />
+</div>
+<table class="table" style="diplay:inline-block; width:100px; float:left;">
+	
+	<tr>
+		<td> Model:</td>
+		<td>{{model}}</td>
+	<tr>
+	<tr>
+		<td> Brand:</td>
+		<td> {{brand}}</td>
+	</tr>
+	<tr>
+		<td> Descripcion:</td>
+		<td> {{description}}</td>
+	</tr>
+</table>
